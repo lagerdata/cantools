@@ -39,7 +39,8 @@ class Message(object):
                  protocol=None):
         frame_id_bit_length = frame_id.bit_length()
 
-        if is_extended_frame:
+        if is_extended_frame or frame_id_bit_length > 11:
+            is_extended_frame = True
             if frame_id_bit_length > 29:
                 raise Error(
                     'Extended frame id 0x{:x} is more than 29 bits in '
