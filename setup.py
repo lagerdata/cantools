@@ -11,7 +11,7 @@ def find_version():
                      re.MULTILINE).group(1)
 
 
-setup(name='cantools',
+setup(name='lager-cantools',
       version=find_version(),
       description='CAN BUS tools.',
       long_description=open('README.rst', 'r').read(),
@@ -24,7 +24,7 @@ setup(name='cantools',
           'Programming Language :: Python :: 3',
       ],
       keywords=['can', 'can bus', 'dbc', 'kcd', 'automotive'],
-      url='https://github.com/eerimoq/cantools',
+      url='https://github.com/lagerdata/cantools',
       packages=find_packages(exclude=['tests']),
       install_requires=[
           'bitstruct>=6.0.0',
