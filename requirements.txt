@@ -1,5 +1,0 @@
-bitstruct
-python-can
-textparser
-diskcache
-argparse_addons
